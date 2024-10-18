@@ -86,7 +86,7 @@ li a {
     margin-right: 27px;
 }
 
-.s1 {
+.section1 img {
     height: 517px;
     width: 100%;
 
@@ -173,7 +173,7 @@ li a {
 
 }
 
-.product-grid {
+.products{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -220,7 +220,7 @@ li a {
 
 }
 
-.contact-flex {
+.contacts{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -238,6 +238,7 @@ li a {
     flex: 1;
     font-size: 1rem;
 }
+
 
 form input {
     width: 592px;
@@ -257,7 +258,6 @@ form textarea {
 
 
 }
-
 .amaranth-bold-italic {
     font-family: "Amaranth", sans-serif;
     font-weight: 700;
@@ -303,7 +303,6 @@ footer {
     font-family: "Audiowide", sans-serif;
     ;
 }
-
 footer p {
 
     position: absolute;
@@ -346,16 +345,13 @@ footer p {
     font-style: normal;
 }
 
-.bar {
-    background: #b9afaf;
-    font-size: 15px;
-    display: none;
-}
 
 
 
 
-@media (max-width: 1024px) {
+
+@media (min-width: 600px)  and (max-width : 900px)
+{
 
     body {
         overflow-x: hidden;
@@ -365,15 +361,16 @@ footer p {
         text-decoration: underline;
     }
 
-    ul {
-        width: 100%;
-    }
-
     ul li {
-        display: block;
+        display: inline;
         text-align: center;
     }
+    .logo {
 
+        top:0.5rem;
+        position: absolute;
+    
+    }
     .section2 {
         text-align: center;
         margin-bottom: 12px;
@@ -382,7 +379,7 @@ footer p {
     }
 
     .section2 h2 {
-        color: rgb(101, 100, 100);
+        color: rgb(221, 101, 101);
         margin: 20px;
         font-size: 30px;
 
@@ -399,19 +396,15 @@ footer p {
 
 
     .card .img-div {
-        background-color: #2f2d2d;
+        background-color: #ededed;
     }
 
     .product-img {
 
-        height: 400px;
+        height: 300px;
         width: 160px;
 
     }
-
-
-
-
     .card h3 {
         margin: 10px 0 5px 0;
     }
@@ -423,22 +416,22 @@ footer p {
         padding: 0 10px;
     }
 
-    .product-grid {
+    .products {
         flex-wrap: wrap;
     }
 
-    .bar {
-        display: block;
-    }
-
+   
     form input {
         width: 500px;
         display: flex;
     }
 
+   form button{
+    background-color: rgb(255, 150, 150);
+    border-radius: 50px;
+   }
 
-
-    .contact-flex {
+    .contacts {
         width: 100%;
         flex-direction: column;
         text-align: center;
@@ -481,7 +474,6 @@ footer p {
         flex-direction: column;
         background-color: gray;
     }
-
     .f-logo {
         font-size: 4rem;
     }
