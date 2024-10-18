@@ -36,17 +36,6 @@ header {
 
 }
 
-.bar {
-    width: 100%;
-    padding: 10px 20px;
-    background: #F2F2F2;
-    text-align: right;
-    box-sizing: border-box;
-    color: #fff;
-    font-size: 30px;
-    display: none;
-}
-
 .logo {
 
 
@@ -142,9 +131,6 @@ li a {
     margin-bottom: 20px;
 }
 
-
-
-
 .card h3 {
     margin: 10px 0 5px 0;
 }
@@ -173,18 +159,13 @@ li a {
 
 }
 
-.products{
+.products {
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: space-around;
     margin: 10px;
-
-
-
 }
-
-
 
 .description {
 
@@ -220,7 +201,7 @@ li a {
 
 }
 
-.contacts{
+.contacts {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -258,6 +239,7 @@ form textarea {
 
 
 }
+
 .amaranth-bold-italic {
     font-family: "Amaranth", sans-serif;
     font-weight: 700;
@@ -303,6 +285,7 @@ footer {
     font-family: "Audiowide", sans-serif;
     ;
 }
+
 footer p {
 
     position: absolute;
@@ -350,8 +333,7 @@ footer p {
 
 
 
-@media (min-width: 600px)  and (max-width : 900px)
-{
+@media (min-width: 600px) and (max-width : 1024px) {
 
     body {
         overflow-x: hidden;
@@ -365,12 +347,14 @@ footer p {
         display: inline;
         text-align: center;
     }
+
     .logo {
 
-        top:0.5rem;
+        top: 0.5rem;
         position: absolute;
-    
+
     }
+
     .section2 {
         text-align: center;
         margin-bottom: 12px;
@@ -405,6 +389,7 @@ footer p {
         width: 160px;
 
     }
+
     .card h3 {
         margin: 10px 0 5px 0;
     }
@@ -420,16 +405,16 @@ footer p {
         flex-wrap: wrap;
     }
 
-   
+
     form input {
         width: 500px;
         display: flex;
     }
 
-   form button{
-    background-color: rgb(255, 150, 150);
-    border-radius: 50px;
-   }
+    form button {
+        background-color: rgb(255, 150, 150);
+        border-radius: 50px;
+    }
 
     .contacts {
         width: 100%;
@@ -474,6 +459,7 @@ footer p {
         flex-direction: column;
         background-color: gray;
     }
+
     .f-logo {
         font-size: 4rem;
     }
