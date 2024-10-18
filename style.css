@@ -2,36 +2,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap');
 
 
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     text-decoration: none;
-    
-    
+
+
 }
 
-header{
+body {
+    overflow-x: hidden;
+
+}
+
+header {
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
-    
-}
-
-.navbar{
-background: #F2F2F2 ; 
-font-family: 'Courier New', Courier, monospace; 
-width: 100%;
-height: 4rem;
-display: flex;
-align-items: center;
-justify-content: space-around;
 
 }
 
-.bar{
+.navbar {
+    background: #F2F2F2;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.bar {
     width: 100%;
     padding: 10px 20px;
     background: #F2F2F2;
@@ -42,59 +47,70 @@ justify-content: space-around;
     display: none;
 }
 
-.logo{
+.logo {
 
-    
+
     left: 20px;
     position: absolute;
-    
-}
-
-.logo a{
-    font-size: 35px; 
-    font-weight: 600; 
-    color: rgb(26, 25, 25); 
-    font-family:'Audiowid';
-    
 
 }
-.links{
-    
+
+.logo a {
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(26, 25, 25);
+    font-family: 'Audiowid';
+
+
+}
+
+.links {
+
     margin: 0 2rem;
-    
+
 }
-li{
-    list-style: none; display: inline-block; 
+
+li {
+    list-style: none;
+    display: inline-block;
 }
-ul li:hover{
+
+ul li:hover {
     background: rgb(125, 124, 124);
 }
+
 li a {
-    color: rgb(101, 100, 100); font-size: 18px; font-weight: bold;margin-right: 27px;
+    color: rgb(101, 100, 100);
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 27px;
 }
+
 .s1 {
     height: 517px;
     width: 100%;
-    
-    
+
+
 }
-.section1 h1{
+
+.section1 h1 {
     position: absolute;
-    height:37px ;
-    width:225px ;
-    padding-left:80px ;
+    height: 37px;
+    width: 225px;
+    padding-left: 80px;
     padding-top: 146px;
     top: 5%;
     font-size: 40px;
-    font-family: "Audiowide",sans-serif;
+    font-family: "Audiowide", sans-serif;
 }
+
 .section2 {
     text-align: center;
     margin-bottom: 20px;
 
 }
 
-.section2 h2{
+.section2 h2 {
     color: rgb(101, 100, 100);
     margin: 20px;
     font-size: 30px;
@@ -103,22 +119,23 @@ li a {
 
 
 
-.card{
+.card {
 
     display: inline-block;
     width: 350px;
     height: 600px;
-    
+
     padding: 15px;
     margin-top: 30px;
     margin-bottom: 50px;
 }
 
 
-.card .img-div{
+.card .img-div {
     background-color: #F2F2F2;
 }
-.product-img{
+
+.product-img {
 
     height: 400px;
     width: 300px;
@@ -129,16 +146,17 @@ li a {
 
 
 .card h3 {
-    margin: 10px 0 5px 0; }
-
-.card p {
-    
-    max-width: 300px;
-    margin-bottom: 20px;
-    padding: 0 10px; 
+    margin: 10px 0 5px 0;
 }
 
-.tablets{
+.card p {
+
+    max-width: 300px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.tablets {
 
     text-align: center;
     margin-bottom: 20px;
@@ -146,7 +164,7 @@ li a {
 
 }
 
-.tablets h2{
+.tablets h2 {
 
     color: rgb(101, 100, 100);
     margin: 20px;
@@ -155,46 +173,46 @@ li a {
 
 }
 
-.product-grid{
+.product-grid {
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: space-around;
     margin: 10px;
-    
 
-    
+
+
 }
 
 
 
-.description{
+.description {
 
     margin: 20px;
 }
 
-.description h3{
+.description h3 {
     font-size: 35px;
     margin: 20px;
     font-family: "Audiowide", sans-serif;
 }
 
-.description p{
+.description p {
 
     font-size: 36px;
     max-width: 650px;
     font-family: "Baloo Bhaijaan 2", sans-serif;
-    
+
 
 }
 
-.contact-us{
+.contact-us {
 
     text-align: center;
     margin-bottom: 20px;
 }
 
-.contact-us h2{
+.contact-us h2 {
 
     color: rgb(101, 100, 100);
     margin: 20px;
@@ -202,24 +220,34 @@ li a {
 
 }
 
-.contact-flex{
+.contact-flex {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    gap: 20px;
     justify-content: space-around;
-    margin: 0px;
+    padding: 20px;
 }
 
+.map-container {
+    flex: 1;
 
+}
 
-form input{
+.form-div {
+    flex: 1;
+    font-size: 1rem;
+}
+
+form input {
     width: 592px;
     height: 56px;
     display: block;
     padding: 10px;
     margin: 10px;
 }
-form textarea{
+
+form textarea {
 
     width: 592px;
     height: 204px;
@@ -229,72 +257,79 @@ form textarea{
 
 
 }
+
 .amaranth-bold-italic {
     font-family: "Amaranth", sans-serif;
     font-weight: 700;
     font-style: italic;
-  }
-form button{
-background-color: #C6E4FF;
-width: 201px;
-height: 43px;
-font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-font-size: 30px;
-text-align: center;
 }
-.form-div{
+
+form button {
+    background-color: #C6E4FF;
+    width: 201px;
+    height: 43px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.form-div {
     padding-right: 0px;
     height: 500px;
     width: 700px;
 }
 
-footer{
+footer {
 
-    background-color:  #F2F2F2;
-    height:250px;
+    background-color: #F2F2F2;
+    height: 250px;
 
 }
 
-.footer-container{
+.footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom:-1px;
+    padding-bottom: -1px;
 
-    
+
 }
 
-.f-logo{
+.f-logo {
 
-    margin: 30px;
-    font-size: 96px; font-weight: 600; color: rgb(26, 25, 25); font-family:"Audiowide", sans-serif;;
+    font-size: 4rem;
+    padding: 10px;
+    color: rgb(26, 25, 25);
+    font-family: "Audiowide", sans-serif;
+    ;
 }
 
+footer p {
 
-
-footer p{
-
-    position:absolute;
+    position: absolute;
     right: 0;
     font-family: "Amaranth", sans-serif;
     font-size: 35px;
     margin: -10px;
-    
-    
+
+
 }
-.social{
+
+.social {
     display: flex;
     justify-content: center;
     padding-top: 100px;
 }
-.social a{
+
+.social a {
     text-decoration: none;
     padding: 10px;
     margin: 10px;
-    
+
 }
-.social a i{
-    font-size: 5em;
+
+.social a i {
+    font-size: 80px;
     color: black;
 }
 
@@ -303,9 +338,166 @@ footer p{
     font-optical-sizing: auto;
     font-weight: 200px;
     font-style: normal;
-  }
-  .audiowide-regular {
+}
+
+.audiowide-regular {
     font-family: "Audiowide", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
+
+.bar {
+    background: #b9afaf;
+    font-size: 15px;
+    display: none;
+}
+
+
+
+
+@media (max-width: 1024px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        text-decoration: underline;
+    }
+
+    ul {
+        width: 100%;
+    }
+
+    ul li {
+        display: block;
+        text-align: center;
+    }
+
+    .section2 {
+        text-align: center;
+        margin-bottom: 12px;
+        width: 100%;
+
+    }
+
+    .section2 h2 {
+        color: rgb(101, 100, 100);
+        margin: 20px;
+        font-size: 30px;
+
+    }
+
+    .card {
+
+        display: inline-block;
+        width: 200px;
+        height: 500px;
+
+
+    }
+
+
+    .card .img-div {
+        background-color: #2f2d2d;
+    }
+
+    .product-img {
+
+        height: 400px;
+        width: 160px;
+
+    }
+
+
+
+
+    .card h3 {
+        margin: 10px 0 5px 0;
+    }
+
+    .card p {
+
+        max-width: 300px;
+        margin-bottom: 20px;
+        padding: 0 10px;
+    }
+
+    .product-grid {
+        flex-wrap: wrap;
+    }
+
+    .bar {
+        display: block;
+    }
+
+    form input {
+        width: 500px;
+        display: flex;
+    }
+
+
+
+    .contact-flex {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .map-container {
+        width: 80vw;
+        margin: auto;
+
+    }
+
+    .form-div {
+        width: 80vw;
+        align-items: center;
+        margin: auto;
+    }
+
+    form input {
+        width: 80vw;
+        height: 56px;
+        display: block;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    form textarea {
+
+        width: 80vw;
+        height: 204px;
+        display: block;
+        padding: 10px;
+        margin: 10px;
+
+
+    }
+
+    footer {
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        background-color: gray;
+    }
+
+    .f-logo {
+        font-size: 4rem;
+    }
+
+    .social a i {
+        font-size: 3rem;
+        color: black;
+    }
+
+    footer p {
+        position: relative;
+        padding: 15px;
+        margin: auto;
+
+        font-family: "Amaranth", sans-serif;
+        font-size: 20px;
+    }
+
+}
